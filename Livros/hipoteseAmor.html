@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Culpa É das Estrelas</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <div class="top-bar">
+            <!-- Informações do topo (logo e área do usuário) -->
+            <div class="topProps">
+                <img class="logo" src="../imagens/logo.png.png" alt="Logo da Booklândia">
+                <h2>The Beyond Bookstore</h2>
+            </div>
+            
+            <div class="login-container">
+                <div>
+                    <a href="#" class="login-link">Login ou cadastro</a>
+                </div>
+                
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/hipoteseAmor.png" alt=" Capa do livro A hipótese do amor">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>A hipótese do amor</h1>
+                    <h3>Autor: Ali Hazelwood</h3>
+                    <p><strong>Editora:</strong> Arqueiro</p>
+                    <p class="preco">Por: R$ 49,45</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+                    
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p><b>Com personagens cativantes e diálogos afiados, este livro engraçado, sexy e inteligente se tornou uma das grandes sensações do TikTok.</b></p>
+
+                <p>Olive Smith, aluna do doutorado em Biologia da Universidade Stanford, acredita na ciência – não em algo incontrolável como o amor.</p>
+
+                <p>Depois de sair algumas vezes com Jeremy, ela percebe que sua melhor amiga gosta dele e decide juntá-los. Para mostrar que está feliz com essa 
+                    escolha, Olive precisa ser convincente: afinal, cientistas exigem provas.</p>
+
+                    <p>Sem muitas opções, ela resolve inventar um namoro de mentira e, num momento de pânico, beija o primeiro homem que vê pela frente.</p>
+
+                    <p>O problema é que esse homem é Adam Carlsen, um jovem professor de prestígio – conhecido por levar os alunos às lágrimas. Por isso, Olive fica 
+                        chocada quando o tirano dos laboratórios concorda em levar adiante a farsa e fingir ser seu namorado.</p>
+
+                        <p>De repente, seu pequeno experimento parece perigosamente próximo da combustão e aquela pequena possibilidade científica, que era apenas uma
+                            hipótese sobre o amor, transforma-se em algo totalmente inesperado.</p>
+
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
