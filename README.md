@@ -3,7 +3,7 @@
 Este é um projeto de uma livraria online desenvolvido com [tecnologias utilizadas: HTML, CSS, JavaScript.].
 
 
-🚀 Funcionalidades<br>
+## 🚀 Funcionalidades<br>
 -Listagem de livros por categoria;<br>
 -Página de detalhes do livro Cadastro e login de usuários;<br>
 -Aba de ver mais;<br>
@@ -19,13 +19,13 @@ Este é um projeto de uma livraria online desenvolvido com [tecnologias utilizad
 -Adicionamos um script de rolagem para ficar mais suave e direcionando ao conteudo certinho.
 
 
-🛠️ Tecnologias utilizadas [✔️] HTML5 [✔️] CSS [✔️] JavaScript <br>
+## 🛠️ Tecnologias utilizadas [✔️] HTML5 [✔️] CSS [✔️] JavaScript <br>
 
-✍️ Autores 
+## ✍️ Autores 
 Gustavo Mascarenhas Sfier Arando - GitHub:(https://github.com/GustavoMascarenhasSfier) <br>
 Gustavo Mascarenhas Sfier Arando - @seuGitHub <br>
 Gustavo Mascarenhas Sfier Arando - @seuGitHub <br>
 Gustavo Mascarenhas Sfier Arando - @seuGitHub<br>
 
 
-📄 Licença Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
+## 📄 Licença Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
