@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um refúgio nas montanhas</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/refugio.jpg" alt=" Capa do livro Um refúgio nas montanhas">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Um refúgio nas montanhas</h1>
+                    <h3>Autor:   Robyn Carr</h3>
+                    <p><strong>Editora:</strong> Harlequin Books</p>
+                    <p class="preco">Por: R$ 79,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>Pela segunda vez em um ano, uma mulher chega a Virgin River tentando escapar de seu passado.Numa noite chuvosa de outubro, John “Preacher” 
+                    Middleton está prestes a fechar o bar quando uma mulher e seu filho de 3 anos aparecem buscando abrigo. Como um fuzileiro que já vivenciou 
+                    sua cota de dor e sofrimento, Preacher percebe que Paige Lassiter passou por maus bocados, e seu instinto protetor imediatamente vem à tona.
+                    Mas Paige está em fuga, e a última coisa que deseja é ficar muito tempo no mesmo lugar. Mesmo que seja um local cheio de pessoas bondosas dispostas 
+                    a ajudá-la, com um quarto para se alojar, uma oportunidade de trabalho e um homem gentil que parece ser capaz de protegê-la de qualquer coisa…</p>
+
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

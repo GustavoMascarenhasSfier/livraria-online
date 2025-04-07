@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a maldição na residência Hill </title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/maldicao.jpg" alt="Capa do livro a maldição na residência Hill ">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>A maldição na residência Hill </h1>
+                    <h3>Autor: SHIRLEY JACKSON</h3>
+                    <p><strong>Editora:</strong> Suma</p>
+                    <p class="preco">Por: R$ 109,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>John Montague, especialista e estudioso do oculto, chega a Hill House em busca de algo 
+                    concreto que possa provar a existência do sobrenatural. Acompanham-no, Theodora, a sua 
+                    assistente, Luke, o futuro herdeiro da propriedade e Eleanor, uma mulher solitária e 
+                    frágil, já com experiência de encontros com poltergeists. Contudo, aquilo que, 
+                    inicialmente, era apenas uma experiência em torno de fenómenos inexplicáveis torna-se, 
+                    em pouco tempo, uma corrida pela sobrevivência, à medida que Hill House ganha poder e 
+                    escolhe, de entre eles, aquele que quer para si… A Maldição de Hill House é um dos mais 
+                    perfeitos exemplos do terror e do suspense em literatura. Fonte de inspiração para nomes 
+                    como Stephen King ou Guillermo del Toro, confessos admiradores de Shirley Jackson, a 
+                    história foi adaptada por duas vezes ao cinema em filmes de grande sucesso.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

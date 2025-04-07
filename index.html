@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel='stylesheet' href="index.css">
+</head>
+
+<body>
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="index.html"><img class="logo" src="imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="#CategoriaAnimes">Animes</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="Sessao-1">
+            <div>
+                <h1>The Beyond Bookstore</h1>
+            </div>
+            <div>
+                <img src="./imagens/imagemFundo-removebg-preview.png">
+            </div>
+        </section>
+
+        <section id="containerMaeCarousel">
+            <!-- Carrossel de Terror -->
+            <article class="Sessao-Carousel" id="CategoriaTerror">
+                <div class="topicos">
+                    <div class=" topico">
+                        <h1>Terror</h1>
+                    </div>
+                    <div class="mais ">
+                        <h1>Ver Mais</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel" id="carouselTerror">
+                        <!-- Cards de livros de terror -->
+                        <a class="linkCard" href="./Livros/Itacoisa.html" target="">
+                            <div class="card">
+                                <img src="imagens/itacoisa.jpg.jpg" alt="It a coisa">
+                                <p>It a coisa</p>
+                                <p class="Preco">R$ 109,90</p>
+                                <button>COMPRAR</button>
+                            </div>
+                        </a>
+                        <a class="linkCard" href="./Livros/maldicao.html" target="">
+                            <div class="card">
+                                <img src="imagens/maldicao.jpg" alt="A maldicao da residencia hill">
+                                <p>maldição da residência hill</p>
+                                <p class="Preco">R$ 109,90</p>
+                                    <button>COMPRAR</button>
+                            </div>
+                        </a>
+                        
+                        <a class="linkCard" href="./Livros/terraAmaldicoada.html" target="">
+                        <div class="card">
+                            <img src="imagens/terraAmaldicoada.jpg" alt="Terra Amaldiçoada">
+                            <p>Terra amaldiçoada</p>
+                            <p class="Preco">R$ 89,90</p>
+                            
+                                <button>COMPRAR</button>
+                          
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/vilarejo.html" target="">
+                            <div class="card">
+                                <img src="imagens/o vilarejo.jpg" alt="O vilarejo">
+                                <p>O vilarejo</p>
+                                <p class="Preco">R$ 60,00</p>
+                            
+                                    <button>COMPRAR</button>
+                            
+                            </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/cemiterio.html" target="">
+                            <div class="card">
+                                <img src="imagens/ocemiterio.jpg" alt="O cemitério">
+                                <p>O cemitério</p>
+                                <p class="Preco">R$ 59,90</p>
+                                
+                                    <button>COMPRAR</button>
+                            </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/fiveNights.html" target="">
+                            <div class="card">
+                                <img src="imagens/91Rh0D2brbL.jpg" alt="Olhos prateados: Five Nights At Freddy's 1">
+                                <p>Olhos Prateados</p>
+                                <p class="Preco">R$ 49,90</p>
+                                    <button>COMPRAR</button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <button class="btn next" onclick="moveCarousel(1, 'carouselTerror')">&#10095;</button>
+                    <button class="btn prev" onclick="moveCarousel(-1, 'carouselTerror')">&#10094;</button>
+                </div>
+            </article>
+
+            <!-- Carrossel de Romance -->
+            <article class="Sessao-Carousel" id="CategoriaRomance">
+                <div class="topicos">
+                    <div class=" topico">
+                        <h1>Romance</h1>
+                    </div>
+                    <div class="mais ">
+                        <h1>Ver Mais</h1>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="carouselRomance">
+                        <a class="linkCard" href="./Livros/assimQueAcaba.html" target="">
+                        <div class="card">
+                            <img src="imagens/e-assim-que-acaba.webp" alt="É Assim Que Acaba">
+                            <p>É Assim Que Acaba</p>
+                            <p class="Preco">R$ 89,25</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/antesDeVoce.html" target="">
+                        <div class="card">
+                            <img src="imagens/antes de voce.jpg" alt="Como Eu Era Antes de Você">
+                            <p>Como Eu Era Antes de Você</p>
+                            <p class="Preco">R$ 59,90</p>
+                                <button>COMPRAR</button> 
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/umRefugioDasMontanhas.html" target="">
+                        <div class="card">
+                            <img src="imagens/refugio.jpg" alt="Um refúgio nas montanhas">
+                            <p>Um refúgio nas montanhas</p>
+                            <p class="Preco">R$ 79,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/aCulpaDasEstrelas.html" target="">
+                        <div class="card">
+                            <img src="imagens/culpadas estrelas.webp" alt="A Culpa É das Estrelas">
+                            <p>A Culpa É das Estrelas</p>
+                            <p class="Preco">R$ 39,45</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/hipoteseAmor.html" target="">
+                        <div class="card">
+                            <img src="imagens/hipoteseAmor.png" alt="A hipótese do amor">
+                            <p>A hipótese do amor</p>
+                            <p class="Preco">R$ R$ 49,45</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/verity.html" target="">
+                        <div class="card">
+                            <img src="imagens/verity.jpg" alt="Verity">
+                            <p>Verity</p>
+                            <p class="Preco">R$ 48,50</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+                    </div>
+
+                    <button class="btn next" onclick="moveCarousel(1, 'carouselRomance')">&#10095;</button>
+                    <button class="btn prev" onclick="moveCarousel(-1, 'carouselRomance')">&#10094;</button>
+                </div>
+            </article>
+            <article class="Sessao-Carousel" id="CategoriaFiccao">
+                <div class="topicos">
+                    <div class=" topico">
+                        <h1>Ficção</h1>
+                    </div>
+                    <div class="mais ">
+                        <h1>Ver Mais</h1>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="carouselFiccao">
+
+                        <a class="linkCard" href="./Livros/bibliotecaMeiaNoite.html" target="">
+                        <div class="card">
+                            <img src="imagens/ficcao1.jfif" alt="A biblioteca da Meia-noite">
+                            <p>A biblioteca da Meia-noite</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/Divergente.html" target="">
+                        <div class="card">
+                            <img src="imagens/ficcao2.jfif" alt="Divergente">
+                            <p>Divergente</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/garotaDoLago.html" target="">
+                        <div class="card">
+                            <img src="imagens/garota do lago.jpg" alt="A Garota do Lago">
+                            <p>A Garota do Lago</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/someChoose Darkness.html" target="">
+                        <div class="card">
+                            <img src="imagens/Some Choose Darkness.jpg" alt="Some Choose Darkness">
+                            <p>Some Choose Darkness</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/neuromancer.html" target="">
+                        <div class="card">
+                            <img src="imagens/Neuromancer.jpg" alt="Neuromancer">
+                            <p>Neuromancer</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                            </a>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/viagemCentroTerra.html" target="">
+                        <div class="card">
+                            <img src="imagens/Viagem ao Centro da Terra1.jpg" alt="Viagem ao Centro da Terra">
+                            <p>Viagem ao Centro da Terra</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+                    </div>
+                    <button class="btn next" onclick="moveCarousel(1, 'carouselFiccao')">&#10095;</button>
+                    <button class="btn prev" onclick="moveCarousel(-1, 'carouselFiccao')">&#10094;</button>
+                </div>
+            </article>
+            <article class="Sessao-Carousel" id="CategoriaFantasia">
+                <div class="topicos">
+                    <div class=" topico">
+                        <h1>Fantasia</h1>
+                    </div>
+                    <div class="mais ">
+                        <h1>Ver Mais</h1>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="carouselFantasia">
+                        <a class="linkCard" href="./Livros/rainhaVermelha.html" target="">
+                            <div class="card">
+                                <img src="imagens/fant1.jfif" alt="A rainha vermelha">
+                                <p>A rainha vermelha</p>
+                                <p class="Preco">R$ 49,90</p>
+                                    <button>COMPRAR</button>
+                            </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/espinhosRosas.html" target="">
+                        <div class="card">
+                            <img src="imagens/fant2.webp" alt="Corte de Espinhos e Rosas">
+                            <p>Corte de Espinhos e Rosas</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/principeCruel.html" target="">
+                        <div class="card">
+                            <img src="imagens/fant3.jfif" alt="O principe Cruel">
+                            <p>O principe Cruel</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/sangueCinzas.html" target="">
+                        <div class="card">
+                            <img src="imagens/fant4.jfif" alt="FNAF">
+                            <p>De Sangue e Cinzas</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/hobbit.html" target="">
+                        <div class="card">
+                            <img src="imagens/hobbit.jpg" alt="O Hobbit">
+                            <p>O Hobbit</p>
+                            <p class="Preco">R$ 79,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/silmarillion.html" target="">
+                        <div class="card">
+                            <img src="imagens/O Silmarillion.jpg" alt="O Silmarillion">
+                            <p>O Silmarillion</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+                   
+                    </div>
+                    <button class="btn next" onclick="moveCarousel(1, 'carouselFantasia')">&#10095;</button>
+                    <button class="btn prev" onclick="moveCarousel(-1, 'carouselFantasia')">&#10094;</button>
+                </div>
+            </article>
+            <article class="Sessao-Carousel" id="CategoriaAnimes">
+                <div class="topicos">
+                    <div class=" topico">
+                        <h1>Mangás</h1>
+                    </div>
+                    <div class="mais ">
+                        <h1>Ver Mais</h1>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="carouselAnimes">
+                        <a class="linkCard" href="./Livros/haikyuu1.html" target="">
+                        <div class="card">
+                            <img src="imagens/thebest.jfif" alt="Haikyuu 1">
+                            <p>Haikyuu 1</p>
+                            <p class="Preco">R$ 44,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/jujutsuKaisen1.html" target="">
+                        <div class="card">
+                            <img src="imagens/jujutsu.jfif" alt="Jujutsu Kaisen 1">
+                            <p>Jujutsu Kaisen 1</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/attackTitan1.html" target="">
+                        <div class="card">
+                            <img src="imagens/dor.jfif" alt="Attack on Titan 1">
+                            <p>Attack on Titan 1</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/soloLeveling.html" target="">
+                        <div class="card">
+                            <img src="imagens/solol.jfif" alt="Solo Leveling">
+                            <p>Solo Leveling</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/wotakoi1.html" target="">
+                        <div class="card">
+                            <img src="imagens/wotakoi.jfif" alt="Wotakoi 1">
+                            <p>Wotakoi 1</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+
+                        <a class="linkCard" href="./Livros/dAndadan1.html" target="">
+                        <div class="card">
+                            <img src="imagens/dandan.jfif" alt="DAndadan 1">
+                            <p>DAndadan 1</p>
+                            <p class="Preco">R$ 49,90</p>
+                                <button>COMPRAR</button>
+                        </div>
+                        </a>
+                    </div>
+                    <button class="btn next" onclick="moveCarousel(1, 'carouselAnimes')">&#10095;</button>
+                    <button class="btn prev" onclick="moveCarousel(-1, 'carouselAnimes')">&#10094;</button>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="container-footer">
+                <!-- Logo e Descrição -->
+                <div>
+                    <h2 class="logoFooter">The Beyond Bookstore</h2>
+                    <p>Sua próxima leitura começa aqui. Milhares de livros com entrega rápida e segura.</p>
+                </div>
+                <div id="footerColuna">
+                    <div>
+                        <h3 class="categoria">Categorias</h3>
+                        <ul>
+                            <li><a class="linkMenu" href="#CategoriaTerror">Terror</a></li>
+                            <li><a class="linkMenu" href="#CategoriaRomance">Romance</a></li>
+                            <li><a class="linkMenu" href="#CategoriaFiccao">Ficcao</a></li>
+                            <li><a class="linkMenu" href="#CategoriaFantasia">Fantasia</a></li>
+                            <li><a class="linkMenu" href="#CategoriaAnimes">Animes</a></li>
+                        </ul>
+                    </div>
+                    <!-- Ajuda -->
+                    <div class="ajuda">
+                        <h3>Ajuda</h3>
+                        <ul>
+                            <li><a href="contato.html"target="_blank">Contato</a></li>
+                            <li><a href="#">Perguntas Frequentes</a></li>
+                            <li><a href="contato.html" target="_blank">Trocas e Devoluções</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-descontos">
+                    <h3>Receba Descontos Exclusivos</h3>
+                    <p>Assine nossa newsletter e ganhe cupons especiais, novidades e promoções.</p>
+                    <form>
+                        <input type="email" placeholder="Digite seu e-mail" required />
+                        <button type="submit">Quero Desconto</button>
+                    </form>
+                </div>
+                <div class="direitos">
+                    <p>© 2025 The Beyond Bookstore. Todos os direitos reservados.</p>
+                </div>
+        </footer>
+        <script src="script2.js"></script>
+    </main>
+</body>
+
+</html>

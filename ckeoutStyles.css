@@ -1,0 +1,208 @@
+/* Estilo Global */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.5)), 
+                url('imagens/loja.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Cartão de pagamento */
+.checkout-card {
+    background-color: #614120;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+}
+
+.checkout-card:hover {
+    transform: scale(1.03);
+}
+
+.checkout-card h1 {
+    text-align: center;
+    color: #ca8a58;
+    text-shadow: 1px 1px 5px #9c6338;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grupo de formulário */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #ca8a58;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #A67C52;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+    width: 90%;
+}
+
+.form-group input:focus {
+    border-color: #8B5E34;
+}
+
+/* Estilo do fieldset */
+fieldset {
+    border: 1px solid #A67C52;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+legend {
+    color: #ca8a58;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Grupo de expiração e CVC */
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+/* Campo de CVC */
+.form-cvc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-cvc label {
+    color: #ca8a58;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.form-cvc input {
+    width: 30px; /* Reduzi ainda mais o tamanho */
+    height: 30px; /* Ajustei a altura para manter proporção */
+    padding: 5px;
+    border: 1px solid #A67C52;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Botão de pagamento */
+.checkout-button {
+    background-color: #4e331a;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.6s, transform 0.5s;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #7a532b;
+}
+
+.checkout-button:active {
+    transform: scale(0.98);
+}
+
+/* Estilização dos selects */
+.expiry-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #A67C52;
+    border-radius: 8px;
+    background-color: #F6F1EB;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+select:focus {
+    border-color: #8B5E34;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        overflow: auto;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .checkout-card {
+        width: 100%;
+        padding: 20px;
+        max-width: 350px;
+    }
+    
+    .form-group-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .expiry-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

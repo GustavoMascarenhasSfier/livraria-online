@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout de Pagamento</title>
+    <link rel="stylesheet" href="ckeoutStyles.css">
+    <link rel="shortcut icon" href="../alteracoes-do-site-de-sexta/imagens/livro.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <section class="checkout-card">
+            <h1>Checkout</h1>
+            
+            <form action="#"    method="POST" novalidate>
+                <fieldset>
+                    <legend>Detalhes do Cartão</legend>
+
+                    <div class="form-group">
+                        <label for="cardholder">Nome no Cartão</label>
+                        <input type="text" id="cardholder" placeholder="ex. Richard Bovell" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardnumber">Número do Cartão</label>
+                        <input type="text" id="cardnumber" placeholder="8888 8888 8888 8888" maxlength="19" required>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="expiry-month">Data de Expiração</label>
+                            <div class="expiry-group">
+                                <select id="expiry-month" required>
+                                    <option value="" disabled selected>Mês</option>
+                                    <option value="01">01 - Janeiro</option>
+                                    <option value="02">02 - Fevereiro</option>
+                                    <option value="03">03 - Março</option>
+                                    <option value="04">04 - Abril</option>
+                                    <option value="05">05 - Maio</option>
+                                    <option value="06">06 - Junho</option>
+                                    <option value="07">07 - Julho</option>
+                                    <option value="08">08 - Agosto</option>
+                                    <option value="09">09 - Setembro</option>
+                                    <option value="10">10 - Outubro</option>
+                                    <option value="11">11 - Novembro</option>
+                                    <option value="12">12 - Dezembro</option>
+                                </select>
+                    
+                                <select id="expiry-year" required>
+                                    <option value="" disabled selected>Ano</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="checkout-button">Confirmar Pagamento</button>
+
+                <!-- Mensagem de sucesso acessível -->
+                <p id="success-message" class="success-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="chekout.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen 1</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/jujutsu.jfif" alt=" Capa do livro Jujutsu Kaisen 1">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Jujutsu Kaisen 1</h1>
+                    <h3>Autor:  Gege Akutami </h3>
+                    <p><strong>Editora:</strong>Panini; 1ª edição (21 agosto 2020)</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>Apesar do estudante colegial Yuuji Itadori ter grande força física, ele se inscreve no Clube de Ocultismo. Certo dia, eles encontram um "objeto amaldiçoado" e 
+                    retiram o selo, atraindo criaturas chamadas de "maldições". Itadori corre em socorro de seus colegas, mas será que ele será capaz de abater essas criaturas 
+                    usando apenas a força física?! Na compra da primeira edição de Jujutsu ganhe de brinde um Poster Exclusivo </p>
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

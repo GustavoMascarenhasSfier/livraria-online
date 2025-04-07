@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olhos prateados: Five Nights At Freddy's 1</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/91Rh0D2brbL.jpg" alt="Capa do livro Olhos prateados: Five Nights At Freddy's 1">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Olhos prateados: Five Nights At Freddy's 1</h1>
+                    <h3>Autor: Scott Cawthon</h3>
+                    <p><strong>Editora:</strong> Intrínseca</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>No popular videogame criado por Scott Cawthon, o jogador assume o papel de um 
+                    segurança contratado para tomar conta de uma pizzaria durante a noite, enquanto 
+                    os animatrônicos perambulam e ganham ímpeto violento. Mas o mistério por trás dessas 
+                    criaturas e dos assassinatos que ocorreram ali nunca foi desvendado... até agora. 
+                    Olhos prateados extrapola o universo que conquistou fãs no mundo todo e traz à tona 
+                    os medos mais obscuros que só brinquedos sinistros são capazes de provocar..</p>
+
+                    <p>O primeiro livro da trilogia Five Nights at Freddy’s leva o leitor ao mundo de Charlie,
+                         uma adolescente que volta para sua cidade natal quando é convidada para participar de
+                          uma homenagem a um de seus amigos de infância, morto dez anos atrás, em circunstâncias
+                           misteriosas, dentro da pizzaria do pai dela.</p>
+
+                    <p>Tomados pela nostalgia e determinados a desvendar o crime jamais solucionado, Charlie e seus 
+                        amigos acabam voltando à pizzaria, agora totalmente abandonada. Eles logo vão descobrir que 
+                        as coisas lá dentro não são mais as mesmas. Os quatro animatrônicos mudaram. Os bonecos que 
+                        antes encantavam as crianças agora guardam um segredo sombrio... e um plano mortal.</p>
+
+                        <p>Lançada em 2014, a série de games Five Nights at Freddy’s tem cinco jogos disponíveis e 
+                            seguidores fiéis ao redor do mundo. No Brasil, vídeos sobre o jogo em canais especializados 
+                            do YouTube chegam a registrar perto de 20 milhões de visualizações e, recentemente, o programa
+                             Zero1, apresentado por Tiago Leifert na TV Globo aberta, dedicou ao jogo uma edição inteira.</p>
+
+                             <p>Lançado em setembro de 2016 nos Estados Unidos, Olhos Prateados está há 16 semanas na lista de 
+                                mais vendidos de livros jovens do The New York Times.</p>
+
+                                <p>“Scott Cawthon sabe muito bem brincar com o medo sombrio causado por animatrônicos assustadores.
+                                    ” ‘ Joel Couture, Indie Game Megazine.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

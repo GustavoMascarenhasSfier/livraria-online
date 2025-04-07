@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <main>
+        <section>
+        <div class="form-container" id="login-form">
+            <img src="imagens/livro.png" alt="Livro girando" class="livro-girando">
+
+            <h1>Entrar</h1>
+            <form id="login-formulario" action="#" method="post">
+                <input type="email" id="login-email"   placeholder="Digite seu e-mail" required />
+                <input type="password" id="login-senha"     placeholder="Digite sua senha" required />
+                <button type="submit" class="btn-link">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="#" id="switch-to-signup">Cadastre-se</a></p>
+        </div>
+        </section>
+
+        <section>
+        <div class="form-container" id="signup-form" style="display: none;">
+            <img src="imagens/livro.png" alt="Livro girando" class="livro-girando">
+
+            <h1>Cadastrar</h1>
+            <form id="form-cadastro">
+                <input type="text" id="nome" placeholder="Nome completo" required />
+                <input type="email" id="email"   placeholder="Digite seu e-mail" required />
+                <input type="text" id="cpf" name="cpf" maxlength="14" oninput="formatarCPF(this)" placeholder="CPF" required>
+                <input type="tel" id="telefone" name="telefone" maxlength="15" oninput="formatarTelefone(this)" placeholder="Telefone" required>
+                <input type="password" placeholder="Crie uma senha" required />
+                <input type="password" placeholder="Confirme a senha" required />
+                <button type="submit" class="btn-link">Cadastrar</button>
+                <p id="mensagem"></p>
+            </form>
+            <p>Já tem uma conta? <a href="#" id="switch-to-login">Entrar</a></p>
+        </div>
+        </section>
+    </main>
+
+    <script src="formulario.js"></script>
+</body>
+</html>

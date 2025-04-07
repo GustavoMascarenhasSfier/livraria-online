@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Garota do Lago</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/garota do lago.jpg" alt=" Capa do livro A Garota do Lago">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>A Garota do Lago</h1>
+                    <h3>Autor: Charlie Donlea</h3>
+                    <p><strong>Editora:</strong> Faro Editorial</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas 
+                    à beira de um longo trecho de água intocada.Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente 
+                    assassinada em uma dessas casas. Filha de um poderoso advogado, Becca estava no auge de sua vida. Atraída instintivamente 
+                    pela notícia, a repórter Kelsey Castle vai até a cidade para investigar o caso. ...E LOGO SE ESTABELECE UMA CONEXÃO ÍNTIMA 
+                    QUANDO UM VIVO CAMINHA NAS MESMAS PEGADAS DOS MORTOS...E enquanto descobre sobre as amizades de Becca, sua vida amorosa e os 
+                    segredos que ela guardava, a repórter fica cada vez mais convencida de que a verdade sobre o que aconteceu com Becca pode ser a 
+                    chave para superar as marcas sombrias de seu próprio passado.</p>
+
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

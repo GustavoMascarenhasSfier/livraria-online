@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Amaldiçoada</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/terraAmaldicoada.jpg" alt="Capa do livro Terra Amaldiçoada">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Terra Amaldiçoadaa</h1>
+                    <h3>Autor: Douglas Lobo</h3>
+                    <p><strong>Editora:</strong> Douglas Hamilton Santos Lobo (7 outubro 2015)</p>
+                    <p class="preco">Por: R$ 89,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p>Obra selecionada para o I Festival de Histórias Sombrias</p>
+                    <p>Gosta de livros de terror e suspense cheios de tensão e reviravoltas, e com um final surpreendente?
+                    “Terra Amaldiçoada” prenderá você do início ao fim!
+                    Demitido de seu emprego em São Paulo, Fabrício Machado retorna a sua terra natal, no interior do Piauí. 
+                    Ali, espera reavaliar sua vida para decidir o rumo a seguir. Logo porém ele descobre que o ambiente rural
+                     arcaico onde cresceu está em extinção. O progresso chegou, ameaçando sua fazenda, sua família e todo um 
+                     modo de vida.
+                    
+                    Quando uma série de assassinatos começa a ocorrer, Fabrício desconfia que uma presença sobrenatural assombra 
+                    sua terra. Uma força aterrorizante que não cessará de matar até que se vingue do mundo que a criou.
+                    
+                    Para ser lido de uma sentada, “Terra Amaldiçoada” é um terror nacional que mescla a clássica tradição do 
+                    romance regionalista nacional com um suspense sobrenatural.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

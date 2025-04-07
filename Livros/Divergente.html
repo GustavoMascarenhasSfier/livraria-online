@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divergente</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/ficcao2.jfif" alt=" Capa do livro Divergente">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Divergente</h1>
+                    <h3>Autor: Veronica Roth</h3>
+                    <p><strong>Editora:</strong> Rocco</p>
+                    <p class="preco">Por: R$ 49,95</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+               <p>Uma escolha pode te transformar. Nesta versão futurista da cidade de Chicago, a sociedade se divide em cinco facções dedicadas ao cultivo 
+                de uma virtude – a Abnegação, a Amizade, a Audácia, a Franqueza e a Erudição. Aos dezesseis anos, numa grande cerimônia de iniciação, os jovens
+                 são submetidos a um teste de aptidão e devem escolher a que grupo querem se unir para passar o resto de suas vidas. Para Beatrice, a difícil 
+                 decisão é entre ficar com sua família ou ser quem ela realmente é – não pode ter os dois. Então, faz uma escolha que surpreende a todos, inclusive 
+                 a ela mesma. Durante a iniciação altamente competitiva que se segue, Beatrice muda seu nome para Tris e se esforça para decidir quem são realmente 
+                 seus amigos – e onde se encaixa na sua nova vida um romance com um rapaz fascinante, porém perturbador. Mas Tris também tem um segredo, que mantém 
+                 escondido de todos, pois poderia significar sua morte. Ao descobrir um conflito crescente que ameaça destruir sua sociedade aparentemente perfeita, 
+                 ela também aprende que seu segredo pode ajudá-la a salvar aqueles que ama... ou destruí-la. A autora estreante Veronica Roth explodiu na cena literária
+                  com o primeiro livro da série DIVERGENTE – uma distopia cheia de decisões eletrizantes, traições devastadoras, consequências espetaculares e um romance
+                   inesperado. A bem-sucedida trilogia de Veronica Roth é um best-seller da Veja. Em 2014 foi adaptado para o cinema, protagonizado por Shailene Woodley 
+                   e Theo James.</p>
+
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

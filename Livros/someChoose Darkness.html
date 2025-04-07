@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Choose Darkness</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/Some Choose Darkness.jpg" alt=" Capa do livro Some Choose Darkness">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>Some Choose Darkness</h1>
+                    <h3>Autor: Charlie Donlea </h3>
+                    <p><strong>Editora:</strong>Kensington</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+               <p>A verdade é fácil de perder, mesmo quando está bem na nossa frente. Como reconstrucionista forense, Rory Moore lança luz
+                 sobre homicídios de casos arquivados ao juntar detalhes da cena do crime que outros não conseguem ver. Limpando o escritório 
+                 de advocacia de seu falecido pai uma semana após seu enterro, ela recebe uma ligação que a mergulha em um caso de décadas que
+                  voltou à vida mais uma vez.</p>
+
+                  <p>No verão de 1979, cinco mulheres de Chicago desapareceram. O predador, apelidado de The Thief, não deixou corpos nem pistas para 
+                    trás — até que a polícia recebeu um pacote de uma mulher misteriosa chamada Angela Mitchell, cujas habilidades de investigação pouco 
+                    ortodoxas parecem ter levado à sua identidade. Mas antes que pudessem interrogá-la, Angela desapareceu. Quarenta anos depois, The Thief
+                     está prestes a ser libertado condicionalmente pelo assassinato de Angela — o único crime que o promotor conseguiu imputar a ele. Mas o
+                      arquivo enigmático que Rory encontra no escritório de advocacia de seu pai sugere que há mais no caso, e em Angela Mitchell, do que o
+                       que foi alimentado ao público, cujos detalhes foram enterrados por quatro décadas.</p>
+
+                       <p>Os talentos de Rory são testados quando ela começa a reconstruir os últimos dias de Angela. Fazendo uma descoberta surpreendente 
+                        após a outra, Rory se torna irremediavelmente enredada no enigma de Angela Mitchell e o que aconteceu com ela. Estabelecendo conexões 
+                        entre o passado e o presente, Rory descobre verdades obscuras sobre a vítima reclusa, seu pai e o homem chamado The Thief que a enviam 
+                        por uma trilha sinuosa onde as coisas podem não ser o que parecem. Enquanto ela continua a cavar, nem mesmo Rory pode estar preparada para
+                         a verdade completa e aterrorizante que está surgindo...</p>
+
+        
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAndadan 1</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/dandan.jfif" alt=" Capa do livro DAndadan 1">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>DAndadan 1</h1>
+                    <h3>Autor: Yukinobu Tatsu</h3>
+                    <p><strong>Editora:</strong>Viz Media</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p><b>Um nerd deve lutar contra espíritos poderosos e alienígenas, todos competindo pelo poder secreto de sua "joia de família". Então, 
+                    quem melhor para lutar ao lado dele do que sua paixão do colégio e uma avó espiritual?!</b></p>
+
+                    <p>Momo Ayase e Okarun estão em lados opostos do espectro paranormal em relação ao que eles vão acreditar e o que não vão. A busca deles 
+                        para provar que um ao outro está errado os leva por um caminho de paixões secretas e batalhas paranormais das quais eles terão que 
+                        participar para acreditar!</p>
+
+                        <p>Momo Ayase faz uma amizade incomum com o fanático por OVNIs de sua escola, a quem ela apelida de "Okarun" porque ele tem um nome que 
+                            não deve ser dito em voz alta. Enquanto Momo acredita em espíritos, ela acha que alienígenas não passam de bobagens. Sua nova amiga, 
+                            enquanto isso, pensa exatamente o oposto. Para resolver as coisas, as duas decidem provar que estão erradas — Momo para um ponto de 
+                            OVNIs e Okarun para um túnel mal-assombrado! O que se desenrola a seguir é uma linda história de amor jovem... e alienígenas e espíritos
+                             estranhamente excitados?</p>
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,1140 @@
+/* Reset e Configurações Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(275deg, #8b5e3c, #24170e, #000000);
+  scroll-padding-top: 100px;
+}
+
+header {
+  background: linear-gradient(280deg, #8b5e3c, #24170e, #000000);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  min-height: 80px;
+  padding: 20px 10px;
+scroll-margin-top: 80px; /* Ajuste esse valor para a altura do seu header */
+  
+}
+
+/* TOP-BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.topProps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#nomeLoja {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* BOTÃO DE LOGIN */
+.login-container {
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.login-container:hover {
+  background-color: #8b5e3c;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container:hover {
+  border: 1px solid black;
+  background-color: #5e4029;
+}
+
+/* NAVEGAÇÃO */
+
+.linkMenu {
+  text-decoration: none;
+  color: white;
+}
+
+.Navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.Navegacao ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navegacao ul li {
+  margin: 0 15px;
+}
+
+.Navegacao ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Navegacao ul a:hover {
+  background-color: #502803;
+  color: #FFDDA9;
+}
+
+.Navegacao li:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.top-bar,
+.Navegacao {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+/* BODY CONTENT */
+#Sessao-1 {
+  padding: 0 50px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70vh;
+  
+  position: relative;
+  
+}
+
+#Sessao-1 div {
+  max-width: 50%;
+  flex: 1;
+  padding: 20px; 
+  box-sizing: border-box;
+
+ 
+}
+
+#Sessao-1 h1{
+    text-shadow: 1px 1px 10px #8b5e3c;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 80px;
+}
+
+#Sessao-1 img{
+  width: 80%;
+  margin-left:100px;
+  height: auto;
+
+}
+
+
+
+
+
+
+/* CAROUSEL */
+
+#containerMaeCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.Sessao-Carousel {
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  color: white;
+  background-color: #38210e;
+  flex-direction: column;
+  border: 2px solid #2c1703;
+  border-radius: 30px;
+  position: relative;
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+}
+
+.Sessao-Carousel h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  height: auto;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.linkCard{
+  text-decoration: none;
+  color:white;
+}
+
+.linkCard .card {
+    min-width: 230px;
+    max-width: 260px;
+    margin-bottom: 15px;
+  }
+
+  .card img {
+    width: 110px;
+    height: auto;
+  }
+
+  .card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+
+/* TÓPICO DO CAROUSEL */
+.topicos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding: 10px;
+}
+
+.topicos h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.topico {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #462e1d;
+}
+
+.mais {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #462e1d;
+}
+
+.mais:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+/* CARD CAROUSEL */
+.card {
+  min-width: 20%;
+  height: 17rem;
+  background-color: #553316;
+  border-radius: 10px;
+  max-width: 10rem;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 0px 10px #693607;
+  border: 1.5px solid #35200d;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 1px 3px 10px #502803;
+}
+
+/* CARD P2 */
+img {
+  width: 120px;
+  height: 150px;
+}
+
+.card img {
+  margin: auto;
+}
+
+.card p {
+  text-shadow: 2px 2px 5px #502803;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.Preco {
+  font-size: 12px;
+}
+
+/* BOTÃO CARD VER LIVRO */
+.card button {
+  min-width: 15%;
+  background-color: #926933;
+  border: 1.5px solid #502803;
+  border-radius: 7px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #b8823c;
+  transition: background-color 0.5s;
+}
+
+/* SETAS DO CAROUSEL */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(59, 15, 15);
+  text-shadow: 1px 0px 10px white;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+footer {
+  background: linear-gradient(270deg, #8b5e3c, #312114, #000000);
+  color: #ffffff;
+  padding: 40px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* Centraliza o grid no centro da página */
+  align-items: flex-start;
+  /* Alinha os itens ao topo */
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+.logoFooter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fca311;
+  margin-bottom: 15px;
+}
+
+#footerColuna {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.categoria,
+.ajuda h3,
+.form-descontos h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fca311;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #fca311;
+}
+
+.form-descontos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #2b1d13;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.form-descontos p {
+  color: #cccccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-descontos form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-descontos input[type="email"] {
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-descontos button {
+  padding: 10px 20px;
+  background-color: #fca311;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-descontos button:hover {
+  background-color: #ffffff;
+}
+
+
+.direitos {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 14px;
+  color: #888888;
+  margin-top: 20px;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  
+  
+  /* BOTÃO DE LOGIN */
+.login-container {
+  width: 200px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.login-container:hover {
+  background-color: #8b5e3c;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 10px; 
+  
+}
+
+.login-container:hover {
+  border: 1px solid black;
+  background-color: #5e4029;
+}
+
+  
+  
+  
+  .Sessao-Carousel {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 15px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: max-content;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 250px;
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .card img {
+    width: 110px;
+    height: auto;
+  }
+
+  .card button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .btn {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .topicos {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .topicos h1 {
+    font-size: 22px;
+  }
+}
+
+
+/* RESPONSIVIDADE CARROSSEL PARA TELAS MENORES */
+@media (max-width: 768px) {
+  
+  #Sessao-1 {
+    padding: 0 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-top: 200px;
+  
+    width: 100%;
+    height: 70vh;
+  
+    position: relative;
+  }
+  
+  #Sessao-1 div {
+    max-width: 50%;
+    flex: 1;
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+  
+  #Sessao-1 h1{
+      text-shadow: 1px 1px 10px #8b5e3c;
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      font-size: 70px;
+  }
+  
+  #Sessao-1 img{
+    width: 70%;
+    margin-left: 70px;
+    height: auto;
+
+  }
+  
+  
+  .Sessao-Carousel {
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: max-content;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 180px;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .card img {
+    width: 100px;
+    height: auto;
+  }
+
+  .card button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .btn {
+    display: none;
+    /* Esconde as setas no mobile */
+  }
+
+  .topicos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .topicos h1 {
+    font-size: 20px;
+  }
+
+  header {
+    background: linear-gradient(270deg, #8b5e3c, #4d3421, #000000);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .topProps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    transition: all 0.3s;
+  }
+
+  .logo {
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .login-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login-container:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  .login-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .login-link:hover {
+    border: 1px solid black;
+    background-color: #5e4029;
+  }
+
+
+  /* NAVEGAÇÃO */
+  .linkMenu {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .Navegacao {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    transition: all 0.3s;
+  }
+
+  .Navegacao ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .Navegacao ul li {
+    list-style: none;
+    margin: 2px;
+  }
+
+  .linkMenu {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  .linkMenu:hover {
+    background-color: #502803;
+    color: #FFDDA9;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .top-bar,
+  .Navegacao {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Botão de login */
+  .login-container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .login-container:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  .login-link {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .login-link:hover {
+    background-color: #8b5e3c;
+    color: white;
+  }
+
+
+  /* TÓPICO DO CAROUSEL */
+  .topicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .Sessao-Carousel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  #footerColuna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-descontos {
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-descontos input[type="email"] {
+    max-width: 100%;
+  }
+
+  .form-descontos button {
+    max-width: 100%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+
+
+  header {
+    background: linear-gradient(270deg, #8b5e3c, #4d3421, #000000);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .topProps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    transition: all 0.3s;
+  }
+
+  .logo {
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .login-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login-container:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  .login-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .login-link:hover {
+    border: 1px solid black;
+    background-color: #5e4029;
+  }
+
+
+  /* NAVEGAÇÃO */
+  .linkMenu {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .Navegacao {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    transition: all 0.3s;
+  }
+
+  .Navegacao ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .Navegacao ul li {
+    list-style: none;
+    margin: 2px;
+  }
+
+  .linkMenu {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+
+  .linkMenu:hover {
+    background-color: #502803;
+    color: #FFDDA9;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .top-bar,
+  .Navegacao {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Botão de login */
+  .login-container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .login-container:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  .login-link {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .login-link:hover {
+    background-color: #8b5e3c;
+    color: white;
+  }
+
+  /* BODY CONTENT */
+  #Sessao-1 {
+    display: none;
+    
+   }
+   
+   #Sessao-1 h1{
+     display: none;
+   }
+ 
+   #Sessao-1 img{
+     display: none;
+   }
+   
+   #containerMaeCarousel{
+     margin-top: 300px;
+   }
+  
+
+  /* TÓPICO DO CAROUSEL */
+  .topicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .Sessao-Carousel {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  .card {
+    min-width: 180px;
+    max-width: 90%;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .Sessao-Carousel h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .card button {
+    font-size: 12px;
+  }
+
+
+
+  #footerColuna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-descontos {
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-descontos input[type="email"] {
+    max-width: 100%;
+  }
+
+  .form-descontos button {
+    max-width: 100%;
+  }
+
+
+}

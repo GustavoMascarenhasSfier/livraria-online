@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Sangue e Cinzas</title>
+    <link rel="stylesheet" href="livroDecricao.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <!-- Cabeçalho com informações principais e navegação -->
+    <header>
+        <!--TOP BAR-->
+        <div class="top-bar">
+            <div class="topProps">
+                <a href="../index.html"><img class="logo" src="../imagens/logo.png.png"></a>
+                <h2 id="nomeLoja">The Beyond Bookstore</h2>
+
+            </div>
+
+            <!--CATEGORIAS-->
+            <nav class="Navegacao">
+
+                <ul>
+                    <li><a class="linkMenu" href="../index.html#CategoriaTerror">Terror</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaRomance">Romance</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFiccao">Ficcao</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaFantasia">Fantasia</a></li>
+                    <li><a class="linkMenu" href="../index.html#CategoriaAnimes">Animes</a></li>
+                    <li><a class="linkMenu" href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="login-container">
+                <a href="formulario.html" class="login-link">Faça seu Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção para exibir detalhes do livro e compra -->
+        <section>
+            <div class="container">
+                <!-- Imagem do livro -->
+                <div class="image">
+                    <img src="../imagens/fant4.jfif" alt=" Capa do livro De Sangue e Cinzas">
+                </div>
+
+                <!-- Detalhes do livro (informações e botões) -->
+                <div class="detalhes">
+                    <h1>De sangue e cinzas</h1>
+                    <h3>Autor:  Jennifer L. Armentrout </h3>
+                    <p><strong>Editora:</strong>Galera</p>
+                    <p class="preco">Por: R$ 49,90</p>
+
+                    <!-- Controle de quantidade do livro -->
+                    <div class="quantidade">
+                        <button onclick="alterarQuantidade(-1)">-</button>
+                        <input type="text" id="quantidade" value="1">
+                        <button onclick="alterarQuantidade(1)">+</button>
+                    </div>
+
+                    <!-- Botão para comprar -->
+                    <a href="../chekout.html" target="_blank"class="compra">COMPRAR</a>
+
+                    <!-- Formulário para calcular o frete -->
+                    <div class="cep">
+                        <input type="text" placeholder="Informe seu CEP">
+                        <button>Calcular Frete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com a descrição do livro -->
+        <section>
+            <div class="descricao-livro">
+                <h2>Descrição</h2>
+
+                <p><b>Vencedor do Goodreads Choice Awards 2020 de melhor romance. De sangue e cinzas é uma fantasia sexy, viciante e arrebatadora, perfeita para os fãs de Sarah J. Maas.</b></p>
+
+                <p>Prestes a completar 19 anos, Poppy se prepara para sua Ascensão. Quer dizer, Poppy é preparada para sua Ascensão, já que, como tudo mais em sua vida, ela não 
+                    tem opção senão Ascender. Sendo a Donzela, ela será entregue aos deuses de qualquer forma, seja lá o que isso signifique.</p>
+
+                    <p>Destinada a salvar Solis dos Atlantes, que amaldiçoaram o reino com a criação dos terríveis Vorazes, Poppy não entende o que está por vir e nem sabe se está 
+                        pronta para ser entregue aos tais deuses ou, ainda, se sequer deseja fazê-lo.</p>
+
+                        <p>Privada de todas as escolhas, sendo inclusive obrigada a cobrir o rosto com um véu e impedida de conversar com qualquer pessoa além de uma dama de companhia designada
+                             pela Corte, Poppy leva uma vida solitária. Mas o que ela quer mesmo é lutar ao lado dos guardas e conseguir se proteger das criaturas que ameaçam o reino, as mesmas
+                              que mataram seus pais. Com um aliado secreto e uma habilidade rara, Poppy tem um vislumbre da vida que poderia ter se fosse livre do fardo de ser a Donzela.</p>
+
+                              <p>Mas com a entrada de Hawke Flynn em sua vida, o mundo de Poppy vira de cabeça para baixo e ela corre o risco de ser arrebatada por tudo o que sempre lhe disseram 
+                                ser proibido. Lançada em uma intrincada rede de mentiras, traições e desejo, ela vê todas as suas certezas começarem a ruir. Qual será o lado certo da história? 
+                                E será que há mesmo um lado certo? Em meio a tantas reviravoltas e dilemas, o futuro de Poppy está cada vez mais incerto e perigoso, e a vida de dois reinos está
+                                 em suas mãos.</p>
+
+                                 <p>Classificação indicativa: 18 anos</p>
+                    
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
