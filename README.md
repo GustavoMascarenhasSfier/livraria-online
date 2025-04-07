@@ -23,9 +23,9 @@ Este é um projeto de uma livraria online desenvolvido com [tecnologias utilizad
 
 ## ✍️ Autores 
 Gustavo Mascarenhas Sfier Arando - GitHub:(https://github.com/GustavoMascarenhasSfier) <br>
-Gustavo Mascarenhas Sfier Arando - @seuGitHub <br>
-Gustavo Mascarenhas Sfier Arando - @seuGitHub <br>
-Gustavo Mascarenhas Sfier Arando - @seuGitHub<br>
+Jackeline Paola Martins - @seuGitHub <br>
+Tamires de Sousa Martins - @seuGitHub <br>
+Thiago Torá Frazão Martins - @seuGitHub<br>
 
 
 ## 📄 Licença Este projeto está sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
