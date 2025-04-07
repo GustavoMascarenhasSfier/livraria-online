@@ -1,4 +1,4 @@
-📚 Livraria Online
+# 📚 Livraria Online
 
 Este é um projeto de uma livraria online desenvolvido com [tecnologias utilizadas: HTML, CSS, JavaScript.].
 
